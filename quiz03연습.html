@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz03</title>
+</head>
+<body>
+    <!--가로 5 세로 6-->
+    <table width="700">
+        <form>
+        <tr>
+            <td colspan="9"><font size="4">다음 
+                <span style="background-color: brown;"><b>내용에 맞게 입력</b></span> 하시오.</font>
+            <td rowspan="5" align="center">
+                <img src="사진.jpg" width="200px" height="200px"></td>
+        </tr>
+        <tr>
+            <td><font size="4">전공 분야를 입력하세요.</font>
+            <select size="1">
+                <option value="p1">소프트웨어</option>
+                <option value="p2">하드웨어</option>
+                <option value="p3">RAM</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><font size="4">이름</font>
+            <input type="text" name="이름">
+        </tr>
+        <tr>
+            <td><font size="4">아이디</font>
+            <input type="text" name="아이디"><br>
+        </tr>
+        <tr>
+            <td><font size="4">비밀번호</font>
+            <input type="text" name="비밀번호"><br>
+        </tr>
+        <tr>
+            <td>
+                <fieldset style="width: 700;">
+                    <legend>성별 조사</legend>
+                    여성<input type="radio" checked>
+                    남성<input type="radio">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset style="width: 700;">
+             <legend>취미 조사</legend>
+             책읽기<input type="checkbox">
+             공부하기<input type="checkbox">
+             책 읽으며 공부하기<input type="checkbox">
+             컴퓨터<input type="checkbox">
+             </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <fieldset style="width: 700;">
+             <legend>하고 싶은 말</legend> 
+             <textarea cols="60" rows="3" name="test"></textarea> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="완료">
+                <input type="button" value="다시작성">
+            </td>
+        </tr>
+        </form>
+    </table>
+</body>
+</html>

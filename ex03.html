@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap" style="background-color: antiquewhite;"><!--div:영역구분-->
+        <div id="head" style="background-color: aqua; height: 100px;">
+            <span style="background-color: aquamarine;">영역 구분</span>
+            <span style="background-color: aquamarine;">영역 구분</span>
+            <span style="background-color: aquamarine;">영역 구분</span>
+        </div>
+        <div id="main" style="background-color: burlywood; height: 150px;">
+            <span style="background-color: aliceblue;">영역 구분</span>
+        </div>
+        <div id="footer" style="background-color: yellowgreen; height: 200px;">
+            <span style="background-color: burlywood;">영역 구분</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <form>
+        <input type="text" placeholder="아이디 입력" required><br><!--required:필수입력 표시-->
+        <input type="text" value="읽기 전용" readonly><br><!--readonly:읽기 전용-->
+        <input type="tel" required pattern="//d{3}-//d{3,4}-//d{4}"
+        placeholder="010-1234-1234"><br>
+
+        
+        <input type="submit" value="전송">
+        <input type="button" value="이전" disabled><!--disabled:제외-->
+        <input type="button" value="다음">
+        <button type="button">버튼입니다</button>
+    </form>
+
+    <hr>
+
+    <fieldset style="width: 200px;">
+        <legend>취미 조사</legend>
+        <input type="text" id="id"><br>
+
+        <label for="h1">책</label><!--laber for, id 기능-->
+        <input id="h1" type="checkbox">
+        <br>
+
+        <label for="id">입력</label>
+    </fieldset>
+
+
+    <label>인라인</label>
+
+    <hr>
+
+   <form action="ex02.html" method="post"> <!--post는 용량이 많을때 사용-->
+        <select size="1" name="test1">
+          <option value="p1">사과</option>
+          <option value="p2">당근</option>
+          <option value="p3">코끼리</option> 
+        </select>
+
+        <input type="text" placeholder="input name" name="이름"><br>
+        <input type="text" placeholder="input address" name="query"><br>
+        <textarea cols="50" rows="5" name="test"></textarea><hr> <!--cols:가로 길이,rows:세로 길이-->
+        <!--form태그 내 포함되어야 초기화,서브밋 동작 즉 다른홈페이지로 이동 가능 -->
+        <input type="reset" value="초기화">
+        <!--submit: 전송 코드, action 주소를통해 서브밋함-->
+        <input type="submit" value="서브밋">
+        <input type="button" value="버튼">
+   </form>
+   <hr>
+
+   <!--checkbox:해제가 가능함 radio는 불가-->
+   멍<input type="checkbox">
+   겜<input type="checkbox">
+   코딩<input type="checkbox">
+
+    <hr> 
+
+    <!--name:사용자 지정,전송 기능 checked: 첫 지정 부분-->
+   10대<input type="radio" name="age1" checked>
+   20대<input type="radio" name="age1">
+   30대<input type="radio" name="age">
+   40대<input type="radio" name="age">
+
+    <hr>
+
+  <input type="color"><br>
+  <input type="range"><br>
+  <input type="radio"><br>
+  <input type="checkbox"><br>
+  <input type="hidden" value="안녕하세요"><br>
+
+      <hr>
+
+    <input type="text" value="내용 입력" size="10" maxlength="10"><br>
+    <input type="password" value="123456"><br>
+    <!--placeholder: 입력창(반투명)-->
+    <input type="email" placeholder="test@test.com"><br>
+    <input type="search" value="검색 x"><br>
+    <input type="tel" placeholder="010-1234-1234"><br>
+    <!--숫자 처음1부터 10까지-->
+    <input type="number" value="1" min="1" max="10"><br>
+
+    <hr>
+
+    <input type="button" value="버튼"><br>
+    <input type="submit" value="서브밋"><br>
+    <input type="reset" value="리셋"><br>
+    <input type="image" src="사진.jpg" width="100px" height="100px" alt=""><br>
+    <!--alt:이미지 대신 글자로 표현-->
+    <img src="" width="100px" height="100px" alt="이미지 대신 글자로 표현"><br> 
+    <input type="file"><br>
+
+</body>
+</html>
